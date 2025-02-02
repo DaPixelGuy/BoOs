@@ -1,7 +1,6 @@
-void dummy_test_entrypoint() {
-}
+#include "../drivers/screen.h"
 
 void main(){
-	char* video_memory = (char*) 0xb8000;
-    *(char*)0xb8000 = 'B';
+	clear_screen();
+	kprint("---------------\n   BAHA BAHA\n---------------\n", 0x0f);
 }
