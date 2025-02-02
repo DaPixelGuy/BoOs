@@ -10,6 +10,6 @@
 
 /* Public kernel API */
 void clear_screen();
-void kprint_at(char *message, int col, int row, int color);
-void kprint(char *message, int color);
-
+void kprint_at(char *message, int col, int row);
+void kprint(char *message);
+void concat(char *s1, char *s2);
